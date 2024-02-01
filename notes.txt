@@ -1,0 +1,5 @@
+what do i need?
+
+speed --
+- time module?
+- start time as soon as run program and end it when bro?
