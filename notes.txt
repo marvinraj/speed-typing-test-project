@@ -1,5 +1,9 @@
 what do i need?
 
-speed --
+time --
 - time module?
 - start time as soon as run program and end it when bro?
+
+speed --
+- search up formula online
+- decided to go with number of characters in user input * 60 / (5 * time taken for user to complete)
