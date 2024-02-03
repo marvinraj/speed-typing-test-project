@@ -3,21 +3,25 @@ import requests
 
 
 def main():
-
+    # instructions
+    print("\nType in the sentence below upon clicking enter!\n")
+    # api here
     category = "happiness"
     api_url = "https://api.api-ninjas.com/v1/quotes?category={}".format(category)
     response = requests.get(api_url, headers={"X-Api-Key": "n4FilKP0NZDqYZguKKP1+Q==TePugoKqGLVK4rQJ"})
 
     if response.status_code == requests.codes.ok:
-        print(response.text)
+        data = response.json()
+        print(data[0]["quote"])
     else:
         print("Error:", response.status_code, response.text)
 
-    to_start = input("press enter to start!")
+    # q to start timer
+    to_start = input("\npress enter to start!")
     
     # start timer
     start = time.time()
-    user_input = input("enter your name now: ")
+    user_input = input("\ntype the sentence here : ")
     end = time.time()
     # end timer
 
