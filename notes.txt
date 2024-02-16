@@ -7,3 +7,11 @@ time --
 speed --
 - search up formula online
 - decided to go with number of characters in user input * 60 / (5 * time taken for user to complete)
+
+write over words --
+- curses module
+
+
+ideas --
+- display wpm as user types.
+- display text on cmd and allow user to write on it 
